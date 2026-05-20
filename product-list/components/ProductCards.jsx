@@ -50,14 +50,14 @@ const ProductCards = ({product,cart, setCart}) => {
             <div className="p-4">
             
             <p className="text-sm text-[hsl(7, 20%, 60%)]" >{product.category}</p>
-            <p  className="text-lg font-semibold text-[hsl(12, 20%, 44%)]">{product.name}</p>
+            <p  className="text-md font-semibold text-[hsl(12, 20%, 44%)]">{product.name}</p>
             <p className="font-semibold text-(--color-red)">${product.price.toFixed(2)}</p>
 
             {
                 cartItem ? (
                    <div className="flex justify-between items-center gap-4  bg-(--color-red) text-white rounded-full py-2 px-2 mt-4 cursor-pointer">
 
-                    <button onClick={decreaseQuantity} className="border border-(--rose-50) rounded-full p-2 hover:scale-110 ">
+                    <button onClick={decreaseQuantity} className="border border-(--rose-50) rounded-full py-3 p-2 hover:scale-110  ">
                         <img src="assets/images/icon-decrement.svg"/>
                     </button>
 
@@ -69,7 +69,7 @@ const ProductCards = ({product,cart, setCart}) => {
 
                    </div>
                 ): (
-            <button className="rounded-full py-2 px-2 w-full mt-4 cursor-pointer border-2 border-(--color-red)"
+            <button className="rounded-full py-2 px-2 w-full mt-4 cursor-pointer border-2 border-(--color-red) hover:text-(--color-red)"
             onClick = {addToCart} >
                 <div className="flex justify-center gap-3">
                     <img src="assets/images/icon-add-to-cart.svg"/>
