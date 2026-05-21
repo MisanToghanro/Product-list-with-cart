@@ -4,7 +4,7 @@ import products from "./data/data.json"
 import ProductCards from "../components/ProductCards"
 import Cart from "../components/Cart";
 import Footer from "../components/Footer";
-import ConfirmModal from "../components/Confirmmodal";
+import ConfirmModal from "../components/ConfirmModal"
 import { useState } from "react";
 
 function App() {
